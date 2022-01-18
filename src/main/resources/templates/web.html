@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +14,13 @@
         gtag('config', 'G-YS9YKWL86E');
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--    <script src="all.js"></script>-->
-<!--    <link rel="stylesheet" href="style.css">-->
+<!--    <script src="../all.js"></script>-->
+<!--    <script src="app.js"></script>-->
+<!--    <script src="fetch/fetch.js"></script>-->
+<!--    <link rel="stylesheet" href="web_style.css">-->
     <title>rgh.synology.me</title>
 </head>
-<body id="mainBody">
+<body>
 <div id="site">
     <div class="left">
         <a href="https://github.com/RyuKH95" target="_blank">Github</a>
@@ -29,21 +31,19 @@
         <a href="https://rgh.synology.me:5001" target="_blank">DSM 비밀번호 찾으러가기</a>
     </div>
 </div>
-<h1><a href="/">Main</a></h1>
+<h1><a href="web">WEB</a></h1>
+<h2><a href="/">Main</a></h2>
+<input id="Night_day" type="button" value="Night" onclick="">
+<p th:text="Hello. + ${data}">Hello. 손님</p>
 <div id="grid">
     <div>
-        <ol>
-            <li><a href="hello">hello</a></li>
-            <li><a href="hello-static.html">정적사이트</a></li>
-            <li><a href="web">WEB</a></li>
+        <ol id="nav">
+
         </ol>
     </div>
-    <div>
-        <h2><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank">HTML</a>에 관하여</h2>
-        <strong>Hello</strong>, world!
-    </div>
-</div>
-<img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" width=100%>
+    <article>
 
+    </article>
+</div>
 </body>
 </html>
