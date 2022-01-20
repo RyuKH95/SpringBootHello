@@ -122,11 +122,6 @@ public class JdbcMemberRepository implements MemberRepository {
         }
     }
 
-    @Override
-    public Optional<Member> findByPhoneNumber(String phoneNumber) {
-        return Optional.empty();
-    }
-
     private Connection getConnection() {
         return DataSourceUtils.getConnection(dataSource);
     }

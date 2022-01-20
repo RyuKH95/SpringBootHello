@@ -29,11 +29,6 @@ public class MemoryMemberRepository implements MemberRepository{
     }
 
     @Override
-    public Optional<Member> findByPhoneNumber(String phoneNumber) {
-        return store.values().stream().filter(member -> member.getPhoneNumber().equals(phoneNumber)).findAny();
-    }
-
-    @Override
     public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }

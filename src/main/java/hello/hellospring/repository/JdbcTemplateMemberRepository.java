@@ -50,12 +50,6 @@ public class JdbcTemplateMemberRepository implements MemberRepository{
     }
 
     @Override
-    public Optional<Member> findByPhoneNumber(String phoneNumber) {
-        List<Member> result = jdbcTemplate.query("select * from member where name = ?", memberRowMapper(), phoneNumber);
-        return result.stream().findAny();
-    }
-
-    @Override
     public List<Member> findAll() {
         return jdbcTemplate.query("select * from member", memberRowMapper());
     }

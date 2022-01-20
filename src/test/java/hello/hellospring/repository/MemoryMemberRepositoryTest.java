@@ -47,15 +47,6 @@ public class MemoryMemberRepositoryTest {
     }
 
     @Test
-    public void findByPhoneNumber() {
-        Member member = new Member();
-        member.setPhoneNumber("01011111111");
-        repository.save(member);
-        Member result = repository.findByPhoneNumber("01011111111").get();
-        assertThat(result).isEqualTo(member);
-    }
-
-    @Test
     public void findAll() {
         Member member1 = new Member();
         member1.setName("spring1");
