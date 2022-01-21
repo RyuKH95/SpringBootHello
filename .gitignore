@@ -39,3 +39,7 @@ out/
 ### application.properties ###
 src/main/resources/application.properties
 src/main/resources/RSA-cert_key.p12
+
+#Synology
+.DS_Store
+*/.DS_Store
